@@ -1,51 +1,25 @@
-﻿{
-    "name":  "workflow-recorder",
-    "version":  "1.0.0",
-    "description":  "Full automatic workflow recording and replay for Windows — equivalent to macOS Record \u0026 Replay. Uses a C# background recorder with global mouse/keyboard hooks to silently capture clicks, key presses, window titles, and screenshots, then generates reusable Codex skills.",
-    "author":  {
-                   "name":  "Workflow Recorder Team",
-                   "url":  "https://github.com/codex-workflow-recorder"
-               },
-    "repository":  "https://github.com/pephupephu/codex-workflow-recorder",
-    "license":  "MIT",
-    "keywords":  [
-                     "workflow-recorder",
-                     "record-and-replay",
-                     "automation",
-                     "windows"
-                 ],
-    "homepage":  "https://github.com/pephupephu/codex-workflow-recorder",
-    "schemaVersion":  "1.0",
-    "skills":  [
-                   {
-                       "name":  "record-workflow",
-                       "description":  "Fully automatic workflow recording for Windows — equivalent to macOS Record \u0026 Replay. Use when Codex needs to capture a multi-step workflow by silently recording mouse clicks, keyboard input, window titles, and screenshots via a hidden C# background process. Generates a reusable skill from the captured data.",
-                       "file":  "skills/record-workflow/SKILL.md"
-                   }
-               ],
-    "scripts":  [
-                    "scripts/Recorder.cs",
-                    "scripts/compile-and-start.ps1",
-                    "scripts/stop-recording.ps1",
-                    "scripts/analyze-recording.ps1",
-                    "scripts/generate-skill-from-recording.py",
-                    "scripts/list-recordings.ps1"
-                ],
-    "interface":  {
-                      "displayName":  "Workflow Recorder",
-                      "shortDescription":  "Record and replay desktop workflows on Windows",
-                      "longDescription":  "Equivalent to macOS Record \u0026 Replay. Records mouse clicks, keyboard input, and screenshots via a background C# process, then generates reusable Codex skills.",
-                      "developerName":  "workflow-recorder",
-                      "category":  "Productivity",
-                      "capabilities":  [
-                                           "Interactive",
-                                           "Write"
-                                       ],
-                      "defaultPrompt":  [
-                                            "Record my expense report submission workflow",
-                                            "Record how I create a new project in our system",
-                                            "Use the recorded workflow to repeat this task"
-                                        ]
-                  },
-    "codexCachebuster":  "2026-06-21T19:17:26Z"
+{
+  "name": "workflow-recorder",
+  "display_name": "Workflow Recorder & Replayer",
+  "description": "Record mouse/keyboard actions and replay them automatically on Windows. Ideal for ComfyUI workflow automation and other desktop tasks.",
+  "author": "pephupephu",
+  "version": "1.1.0",
+  "scripts": {
+    "record": {
+      "command": "compile-and-start.ps1",
+      "description": "Start recording mouse/keyboard actions"
+    },
+    "replay": {
+      "command": "replay-recording.ps1",
+      "description": "Replay a recorded workflow"
+    },
+    "list": {
+      "command": "list-recordings.ps1",
+      "description": "List all recordings"
+    }
+  },
+  "icon": "https://cdn.jsdelivr.net/gh/pephupephu/codex-workflow-recorder@main/assets/icon.png",
+  "license": "MIT",
+  "platform": "windows",
+  "repository": "https://github.com/pephupephu/codex-workflow-recorder"
 }
