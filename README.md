@@ -3,7 +3,7 @@
 > Record desktop workflows by demonstration and turn them into reusable Codex skills.
 > **Windows equivalent of macOS Record & Replay.**
 
-[![Plugin Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/pephupephu/codex-workflow-recorder)
+[![Plugin Version](https://img.shields.io/badge/version-1.0.0-blue.svg)]()
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -44,10 +44,10 @@
 
 ```powershell
 # Clone the repo
-git clone https://github.com/pephupephu/codex-workflow-recorder.git
+git clone <your-repo-url>
 cd codex-workflow-recorder
 
-# Copy to plugins folder (adjust path to your actual plugin path)
+# Copy to plugins folder
 Copy-Item ".\workflow-recorder" "$env:USERPROFILE\plugins\" -Recurse -Force
 ```
 
@@ -170,7 +170,3 @@ Contributions are welcome! Feel free to open issues or submit pull requests.
 ## License
 
 MIT License — see [LICENSE](LICENSE) for details.
-
-## Author
-
-[pephupephu](https://github.com/pephupephu)

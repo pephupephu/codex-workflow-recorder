@@ -3,8 +3,8 @@
     "version":  "1.0.0",
     "description":  "Full automatic workflow recording and replay for Windows — equivalent to macOS Record \u0026 Replay. Uses a C# background recorder with global mouse/keyboard hooks to silently capture clicks, key presses, window titles, and screenshots, then generates reusable Codex skills.",
     "author":  {
-                   "name":  "pephupephu",
-                   "url":  "https://github.com/pephupephu"
+                   "name":  "Workflow Recorder Team",
+                   "url":  "https://github.com/codex-workflow-recorder"
                },
     "repository":  "https://github.com/pephupephu/codex-workflow-recorder",
     "license":  "MIT",
