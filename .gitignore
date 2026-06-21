@@ -1,0 +1,24 @@
+﻿# Codex Record & Replay Plugin - .gitignore
+
+# Test recordings (user-specific)
+assets/recordings/*
+!assets/recordings/.gitkeep
+
+# Generated skills (user-specific)
+skills/generated/*
+!skills/generated/.gitkeep
+
+# Compiled binaries
+*.exe
+*.dll
+*.pdb
+*.obj
+*.bin
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
